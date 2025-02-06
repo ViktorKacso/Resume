@@ -1,0 +1,225 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(Tablle-transformed.jpeg);
+    margin: 0;
+    padding: 0;
+}
+
+.cv-container {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Kisebb árnyék a lapnak */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('grop.jpg'); /* A kép URL-je */
+    background-size: cover; /* Lefedi az egész területet */
+    background-position: center; /* Középre igazítja a képet */
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.profile-pic-container {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d0d0d0; /* Világosszürke kör */
+    border-radius: 50%;
+}
+
+.profile-pic {
+    width: 150px; /* Kicsivel kisebb profilkép szélesség */
+    height: 150px; /* Kicsivel kisebb profilkép magasság */
+    border-radius: 50%; /* Kör alakú profilkép */
+}
+
+.header-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #ffffff;
+}
+
+    .header-info h1 {
+        margin: 0;
+        font-size: 2em;
+    }
+
+    .header-info h2 {
+        margin: 0;
+        font-size: 0,5em;
+        margin-bottom: 5px;
+    }
+
+.main {
+    display: flex;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+.left-column {
+    width: 35%;
+    padding: 20px;
+    background-color: #333;
+    color: #ffffff;
+    border-radius: 0 0 0 8px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.right-column {
+    width: 65%;
+    padding: 20px;
+    border-radius: 0 0 8px 0;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+    .section h3 {
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 15px;
+        background-color: #000000;
+        border: 2px solid #007bff;
+        color: #ffffff;
+        display: inline-block;
+        width: fit-content; /* Egyforma méret */
+    }
+
+    .section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .section ul li {
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+    .section p {
+        margin: 5px 0;
+        color: #ffffff;
+    }
+
+    .section h4 {
+        margin-bottom: 2px;
+        color: #007bff;
+    }
+
+    .section ul.right-column-list {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+        .section ul.right-column-list li {
+            color: #555555;
+        }
+
+.image-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image-button {
+    display: block;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+    background: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+    .image-button img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .image-button:hover {
+        transform: scale(1.1) translateZ(10px);
+    }
+.button-text-container {
+    display: flex; /* Flexbox elrendezés */
+    align-items: center; /* Középre igazítja függőlegesen */
+    margin-bottom: 20px;
+    flex-wrap: nowrap; /* Gátolja a sorba törést */
+}
+.text-container h2 {
+    margin-bottom: 5px; /* Csökkenti a távolságot a h2 és h4 között */
+}
+
+.text-container h4 {
+    margin-top: 0; /* Eltávolítja a felesleges margót a tetején */
+}
+.section p1 {
+    margin: 5px 0;
+    color: #000000;
+}
+.button-text-container h2 {
+    font-size: 1em; /* Csökkenti a h2 betűméretét */
+}
+
+.section:nth-of-type(2) {
+    margin-bottom: 10px; /* Csökkenti a távolságot a Tapasztalat és az Oktatás között */
+}
+
+.section + .section {
+    margin-top: 10px; /* Csökkenti a távolságot az egyes szekciók között */
+}
+a {
+    color: #ffffff; /* Alapértelmezett szín: fehér */
+    text-decoration: none; /* Aláhúzás eltávolítása, ha szükséges */
+}
+
+    a:hover {
+        color: #00ff21; /* Szín sötét zöldre, amikor fölé viszed az egeret */
+    }
+.felsorolas {
+    list-style-type: none; /* Alapértelmezett felsorolás stílus eltávolítása */
+    padding: 0;
+}
+
+    .felsorolas li {
+        position: relative;
+        padding-left: 20px; /* Hely a bal oldalon a fehér pont számára */
+        margin-bottom: 10px; /* Hézag a felsorolás elemek között */
+    }
+
+        .felsorolas li::before {
+            content: '\2022'; /* Unicode karakter a pont számára */
+            color: white; /* Pont színe fehér */
+            position: absolute;
+            left: 0;
+        }
+h5 {
+    font-size: 1em; /* A jelenlegi betűméret 1.2-szerese */
+}
+hr {
+    border: 1px solid black; /* A szín feketére állítása */
+    height: 2px; /* A méret növelése */
+    background-color: black; /* A belső rész színének beállítása feketére */
+}
